@@ -197,6 +197,13 @@ VALUES
 ('Av. Amarela', 'Zona Sul', 'Fortaleza', 'CE', '606', '', 'Ao lado da escola', '60000000'),
 ('Rua Azul', 'Centro', 'Salvador', 'BA', '707', '', 'Próximo ao elevador', '40000000');
 
+UPDATE Restaurante
+SET telefone = '11999999999'
+WHERE id = 1;
+
+DELETE FROM Restaurante
+WHERE id = 10;
+
 SELECT 
     p.nome AS Produto, 
     SUM(pp.quantidade) AS Quantidade_Vendida
